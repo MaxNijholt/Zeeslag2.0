@@ -1,0 +1,191 @@
+
+body {
+	background-color: #000000;
+
+}
+
+#gameCon {
+    min-width: 1660px;
+}
+
+.container {
+    width: 95%;
+}
+
+
+.h1, .h2  {
+    color: #ffffff;
+}
+
+.gameboard {
+     width: 520px;
+     margin: 0 auto;
+
+}
+
+#enemyGameboard div.cell:hover{
+   background-color:#63FF1D;
+
+
+}
+
+.gameboard h2 {
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	background-color: #000000;
+}
+
+.gameboard .locations {
+	width: 500px;
+	height: 500px;
+	background-image: url('../images/water_texture.jpg');
+	}
+	
+.gameboard .locations .cell {
+	float: left;
+	width: 50px;
+	height: 50px;
+	word-wrap: break-word;
+	border: solid 1px #00FF00;
+	overflow:hidden;
+}
+
+.gameboard .x-as, .gameboard .y-as {
+	text-align: center;
+	font-weight: bold;
+	color: #EEEEEE;
+	background-color: #000000;
+}
+
+.gameboard .x-as {
+	float: right;
+	
+}
+
+.gameboard .y-as {
+	float: left;
+}
+
+.gameboard .y-as div {
+	height: 50px;
+	width: 20px;
+	line-height: 50px;
+}
+
+.gameboard .x-as div {
+	float: right;
+	height: 20px;
+	width: 50px;
+}
+
+#gamelist {
+	/*background-color: #00FF00;*/
+	list-style-type: none;
+}
+
+.selected {
+	background-color: #EEEEEE;
+}
+
+#ships {
+	/*background-color: #00FF00;*/
+}
+
+.hit {
+	background-color: #FF0000;
+}
+
+.missed {
+	background-color: #0000FF;
+}
+
+.gamepanel {
+    height: 400px;
+    overflow-y:scroll;
+    text-align: left;
+}
+
+.shipPanel {
+	display: none;
+}
+
+div#boat.dropped {
+    background: purple;
+ ;
+}
+
+.ship0 {
+     background: #0000FF;
+ }
+
+.ship0label {
+    color: #0000FF;
+}
+
+.ship1 {
+    background: purple;
+}
+
+.ship1label {
+    color: purple;
+}
+
+.ship2 {
+    background: #ffff00;
+}
+
+.ship2label {
+    color: #ffff00;
+}
+
+.ship3 {
+    background: orange;
+}
+
+.ship3label {
+    color: orange;
+}
+
+.ship4 {
+    background: #000000;
+}
+
+.ship4label {
+    color: #000000;
+}
+
+.boat {
+    cursor: move;
+}
+
+.valid {
+    background: green;
+}
+
+.invalid {
+    background: red;
+}
+.modal {
+  text-align: center;
+}
+
+.modal:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#modalWon .modal-content {
+	background-color: #5CB85C;
+}
+#modalLost .modal-content {
+	background-color: #D9534F;
+}
